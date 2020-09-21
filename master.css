@@ -4,51 +4,48 @@
     padding: auto 0;
 }
 body{
-    width: 360px;
     font-family: 'Playfair Display', serif;
-    background-color: #fbe3d5;
+    color: #2d425e;
 }
-body .banner{
+.contenedor-banner{
     display: flex;
 }
-body .rosa{
+.contenedor-banner .caja-rosa{
     width: 70%;
     height: 20vh;
     position: relative;
     left: 25px;
-   background-color:#d67369 
-   ;
-   color: white; 
+   background-color:#66dea7; 
    padding: 17px;
-    }
-    body .rosa h1{
+  }
+.contenedor-banner .caja-rosa h1{
         padding-bottom: 17px;
         font-size: 1.5em;
     }
-    body .rosa h4{
+.contenedor-banner .caja-rosa h4{
         padding-bottom: 17px;
         font-size: 0.9em;
     }
-body .verde{
+.contenedor-banner .caja-verde{
     width: 80%;
-    height: 30vh;
+    height: 40vh;
 }
 
-body .verde img{
+ .caja-verde img{
     width: 100%;
-    height: 30vh;
+    height: 40vh;
 }
 nav{
     width: 100%;
     height: 4vh;
     background: #FFAFBD;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #9ee8c6, #28e68e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 nav ul{
     display: flex;
-    margin-left: 95px;
+    justify-content: center;
 }
 nav ul li{
   list-style: none;
@@ -57,144 +54,168 @@ nav ul li{
 }
 nav ul li a{
     display: inline-block;
-    color: white;
+    color: #2d425e;
+    font-size: 25px;
 }
-.contenido-proyecto{
+.contenedor{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 80px;
+}
+.contenedor h2{
+    font-size: 45px;
+    font-weight: 900;
+    margin: 25px 0 55px;
+}
+
+.principal{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
 }
-.proyecto{
-    width: 350px;
-    height: 30vh;
-    margin: 10px 10px 20px 10px;
- }
- .proyecto h4{
-    text-align: center;
-    color:#d67369;
- }
- .photo{
-     width:90%;
-     height:  25vh;
-     margin: 18px;
-    }
-
+.caja{
+    background-color: white;
+    border: 1px solid rgb(196, 194, 194);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+.icono{
+    font-size: 90px;
+    margin: 25px 0px 25px;
+    color: #5ce0a3;
+}
+.caja-proyec{
+    border: 1px solid rgb(196, 194, 194);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    width: 50%;
+    height: 50vh;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 1px 1px 6px grey;
+}
+.caja-proyec img{
+    width: 100%;
+    height: 40vh;
+}
+    
  
  @media(min-width:768px){
-    body{
-        width: 768px;  
-    }
-    
-    body .rosa{
+  
+    body .caja-rosa{
         width:40%;
-        height: 35vh;
+        height: 50vh;
         position: relative;
         left: 25px;
-       background-color:#d67369;
-       color: white; 
        margin-left: 20px ;
        padding:10px;
         }
-     .banner{
-         background-color: white;
-     }
-      body .banner h1 {
+     
+    .contenedor-banner h1 {
           font-size: 2em;
           margin-top: 20px;
           margin-bottom: 15px;
           text-align: center;
       }
-      body .banner h4{
+    .contenedor-banner h4{
         font-size: 1.5em;
         text-align: center;
     }
        
-    body .verde{
+    .contenedor-banner .caja-verde{
         width:70%;
         height: 50vh;
        
     }
     
-    body .verde img{
+    .contenedor-banner .caja-verde img{
         width: 100%;
         height: 50vh;
     }
-    
+    nav{
+        width: 100%;
+        height: 6vh;
+    }
     nav ul{
         display: flex;
-        margin-left: 270px;
+        justify-content: center;
+       
     }
     
     nav ul li a i{
-       font-size: 1.5em;
-       margin-top: 4px;
+       font-size: 25px;
+      
     }
-    .proyecto{
-        margin-right: 10px;
+    .contenedor h2{
+        font-size: 1.5em;
     }
-    .contenido-proyecto{
-        display: flex;
-        
+    .caja-proyec{
+        width: 40%;
+        height: 50vh;
     }
+    
 }
     
  @media(min-width:1415px){
-    body{
-        width: 1415px;  
-    }
-    
-    body .rosa{
-        width:35%;
+    .contenedor-banner .caja-rosa{
+        width: 40%;
         height: 40vh;
         position: relative;
         left: 30px;
-       background-color:#d67369;
-       color: white; 
-       margin-left: 20px ;
-       padding:10px;
+         margin-left: 20px ;
+        padding:10px;
         }
     
-      body .banner h1 {
-          font-size: 2em;
+    .contenedor-banner .caja-rosa h1 {
+          font-size: 3em;
           margin-top: 50px;
           margin-bottom: 30px;
           text-align: center;
       }
-      body .banner h4{
-        font-size: 1.5em;
+    .contenedor-banner .caja-rosa h4{
+        font-size:2em;
         text-align: center;
+        color: rgb(66 85 86);
     }
        
-    body .verde{
-        width:80%;
-        height:60vh;
+    .contenedor-banner .caja-verde{
+        width:70%;
+        height:70vh;
     }
     
-    body .verde img{
+   .verde-caja img{
         width: 100%;
-        height:60vh;
+        height:70vh;
     }
     
     nav ul{
-      
-        margin-left: 600px;
+    display: flex;
+    justify-content: center;  
+    
     }
     
     nav ul li a i{
        font-size: 1.5em;
        margin-top: 4px;
     }
-    
-    .contenido-proyecto{
-        display: flex;  
+    .principal{
+       display: flex;
+       flex-wrap: nowrap;
+       justify-content: center;
+       align-items: center;
+       max-width: 1415px;
     }
-    .proyecto{
-        width: 40%;
-        height:35vh;
-        border-radius: 5%;
-        border: 5px solid  rgba(255,255,255,0.4);;
-        margin: 20px ;
-    }
-    .contenido-pro{
-        margin: 20px 80px;
-    }
+  
  }
