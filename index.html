@@ -7,33 +7,65 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="master.css">
     <title>Porfolio de Rocio Sanchez</title>
 </head>
 <body>
-    <div class="contenedor-banner">
-        <div class="caja-rosa">
-            <h1>Rocio Sanchez</h1>
-            <h4>Desarrolladora Web Full Stack</h4>
-             
-        </div>
-        <div class="caja-verde">
-        <img class="" src="imagen/banner.png" alt="">
-     </div>
-     </div>
-     <header>
-    <nav>
-        <ul>
-            <li><a href="https://github.com/Bel-ro"><i class="fab fa-github"></i></a></li>
-            <li><a href="www.linkedin.com/in/ro-sanchez"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="mailto:belsanchez05@gmail.com"><i class="fas fa-envelope"></i></a></li>
-
+  <!--Barra de navegacion-->
+  <header>
+    <div class="container-fluid ">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#conocimientos">CONOCIMIENTOS </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#proyectos">PROYECTOS </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#contactos">CONTACTO</a>
+          </li>
         </ul>
+      </div>
     </nav>
+  </div>
   </header>
+ 
+   <!--banner-->
+    <div class="contenedor-banner">
+      <section class="seccion-hola" id="a-hola">
+        <div class="contenedor-hola">
+            <div class="texto-hola">
+                <h3 id="div-introduccion">¡Hola! Soy</h3>
+                <h1>Rocio Sanchez</h1>
+                <p class="p-hola">Desarrolladora web</p>
+
+                <ul>
+                    
+                        <li class="boton"><a href="#a-proyectos"></a>LO QUE HAGO</li>
+                  
+                </ul>
+              </div>
+                <div class="img-hola">
+                <img  src="imagen/banner.png" alt="">
+              </div>
+            
+            
+        </div>
+        </div>
+    </section>
+       
+    <!--Conocimientos-->
+   
     <div class="contenedor">
       
-        <h2>Mis conocimientos</h2>
+        <h4 id="conocimientos">Mis conocimientos</h4>
         <div class="principal">
           <div class="caja">
             <i class="icono devicon-html5-plain"></i>
@@ -53,10 +85,10 @@
           </div>
         </div>
       </div>
-    
+    <!--proyectos-->
       <div class="contenedor">
 
-        <h2>Mis trabajos</h2>
+        <h4 id="proyectos">Mis trabajos</h4>
         <div class="principal">
           <div class="caja-proyec">
             <a href="proyecto-2/index.html"><img src="imagen/cocina.jpg " alt=""></a>
@@ -76,8 +108,39 @@
           </div>
         </div>
         </div>
-      
-  
+             <!--Contactos-->
+          <footer>
 
+              <div class="solapas">
+                <ul class="ul-foot">
+                  <li><a href="#div-introduccion" class="link-footer">HOLA</a></li>
+                  <li><a href="#conocimientos" class="link-footer">CONOCIMIENTOS</a></li>
+                  <li><a href="#proyecto" class="link-footer">PROYECTOS</a></li>
+                  
+                </ul>
+              </div>
+              
+              <div class="redes" id="contactos">
+                <a href="www.linkedin.com/in/ro-sanchez" class="link-footer dos">
+                  <i class="fab devicon-linkedin-plain"></i></a>
+                <a href="https://github.com/Bel-ro" class="link-footer dos"><i class="fab devicon-github-plain"></i></a>
+                <a href="mailto:belsanchez05@gmail.com" class="link-footer dos"><i class=" fas fa-envelope"></i></a>
+              </div>
+          
+              <div class="hecho">
+                <p>Hecho por Rocio Sanchez</p>
+              </div>
+          
+              
+              
+            </footer>
+        
+       <!--Contactos-->
+          
+
+     <!--script bootstrap-->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
