@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="contenedor-prin">
+          <!--HEADER-->
+    <header>
+        <img src="img/logo.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="">SMARTPHONES</a></li>
+                <li><a href="">TABLETS</a></li>
+                <li><a href="">COMPUTADORAS</a></li>
+            </ul>
+        </nav>
+        <div class="">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="contenedor-registro"> 
+            <h3>REGISTRATE</h3>
+            <form action="registro.html" method="post">
+                <label for="name">Nombre</label><br>
+                <input class="datos-personales" type="text" name="nombre" id="nombre" placeholder=" Ingresa tu nombre" required>
+                <p>Obligatorio.</p>
+
+                <label for="apellido">Apellido</label><br>
+                <input class="datos-personales" type="text" name="apellido" id="apellido" placeholder=" Ingresa tu email" required>
+                <p>Obligatorio.</p>
+
+                <label for="contra">Contraseña</label><br>
+                <input class="datos-personales" type="password" name="contra" id="contra" placeholder=" Password"required>
+                <p>Obligatorio.</p>
+
+                 <h4>Pais de nacimiento</h4>
+                <select name="paises" id="">
+                    <option value="arg">Argentina</option>
+                    <option value="bra">Brasil</option>
+                    <option value="chi">Chile</option>
+                    <option value="peru">Peru</option>
+                    <option value="venez">Venezuela</option>
+                </select>
+                <p>Obligatorio.</p>
+
+                <h4>Genero</h4>
+                   <p><input type="radio"> Masculino</p>
+                    <p><input type="radio"> Femenino</p>
+                    <p><input type="radio"> Prefiero no decirlo</p>
+
+                    <h4>Hobbies</h4>
+                    <p><input type="radio"> Guitarra</p>
+                    <p></p><input type="radio"> Futbol</p>
+                    <p></p><input type="radio"> Tenis</p>
+                    <p></p><input type="radio"> Programacion</p>
+
+                    <h4>Dejanos tus comentarios</h4>
+                    <textarea name="mensaje" id="" cols="28" rows="7"></textarea><br>
+                    
+                    <input type="radio"> Acepto los terminos y condiciones
+                    <button type="submit">Registrarme</button>
+                    <button type="reset">Cancelar</button>
+            </form>
+
+    </section>
+
+    </div>
+</body>
+</html>

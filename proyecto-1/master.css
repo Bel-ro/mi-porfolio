@@ -1,221 +1,181 @@
 *{
     box-sizing: border-box;
-    margin: auto 0;
-    padding: auto 0;
+    margin: 0 auto;
+    padding: 0;
 }
 body{
-    font-family: 'Playfair Display', serif;
-    color: #2d425e;
-}
-.contenedor-banner{
-    display: flex;
-}
-.contenedor-banner .caja-rosa{
-    width: 70%;
-    height: 20vh;
-    position: relative;
-    left: 25px;
-   background-color:#66dea7; 
-   padding: 17px;
-  }
-.contenedor-banner .caja-rosa h1{
-        padding-bottom: 17px;
-        font-size: 1.5em;
-    }
-.contenedor-banner .caja-rosa h4{
-        padding-bottom: 17px;
-        font-size: 0.9em;
-    }
-.contenedor-banner .caja-verde{
-    width: 80%;
-    height: 40vh;
-}
 
- .caja-verde img{
-    width: 100%;
-    height: 40vh;
-}
-nav{
-    width: 100%;
-    height: 4vh;
-    background: #FFAFBD;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #9ee8c6, #28e68e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-nav ul{
-    display: flex;
-    justify-content: center;
-}
-nav ul li{
-  list-style: none;
-    margin-right:10px ;
-    
-}
-nav ul li a{
-    display: inline-block;
-    color: #2d425e;
-    font-size: 25px;
-}
-.contenedor{
-    display: flex;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px 0 80px;
-}
-.contenedor h2{
-    font-size: 45px;
-    font-weight: 900;
-    margin: 25px 0 55px;
-}
-
-.principal{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 700px;
-}
-.caja{
-    background-color: white;
-    border: 1px solid rgb(196, 194, 194);
-    display: flex;
-    flex-direction: column;
-    border-radius: 5%;
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    margin: 10px;
-}
-.icono{
-    font-size: 90px;
-    margin: 25px 0px 25px;
-    color: #5ce0a3;
-}
-.caja-proyec{
-    border: 1px solid rgb(196, 194, 194);
-    display: flex;
-    flex-direction: column;
-    border-radius: 5%;
-    width: 50%;
-    height: 50vh;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 1px 1px 6px grey;
-}
-.caja-proyec img{
-    width: 100%;
-    height: 40vh;
-}
-    
- 
- @media(min-width:768px){
-  
-    body .caja-rosa{
-        width:40%;
-        height: 50vh;
-        position: relative;
-        left: 25px;
-       margin-left: 20px ;
-       padding:10px;
-        }
+    background-image:url(../img/bg-2.png) ;
+    font-family: Arial, Helvetica, sans-serif; 
      
-    .contenedor-banner h1 {
-          font-size: 2em;
-          margin-top: 20px;
-          margin-bottom: 15px;
-          text-align: center;
-      }
-    .contenedor-banner h4{
-        font-size: 1.5em;
-        text-align: center;
-    }
-       
-    .contenedor-banner .caja-verde{
-        width:70%;
-        height: 50vh;
-       
-    }
-    
-    .contenedor-banner .caja-verde img{
-        width: 100%;
-        height: 50vh;
-    }
-    nav{
-        width: 100%;
-        height: 6vh;
-    }
-    nav ul{
-        display: flex;
-        justify-content: center;
-       
-    }
-    
-    nav ul li a i{
-       font-size: 25px;
-      
-    }
-    .contenedor h2{
-        font-size: 1.5em;
-    }
-    .caja-proyec{
-        width: 40%;
-        height: 50vh;
-    }
+}
+/*HEADER*/
+.contenedor-principal{
+    width: 1140px;
+    overflow: hidden;
+}
+header{
+   
+    background-color: #ef4c27;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: 5px;
+}
+header img{
+   float: left; 
+}
+header nav{
+    float: left;
+}
+header div{
+    float: right;
+}
+ul{
+    overflow: hidden;
+}
+ul li{
+    float: left;
+    list-style: none;
+    margin-left: 27px;
+    margin-top: 10px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+  /*SECCION ARTICULOS*/
+
+#seccion-articulos{
+    width: 800px;
+    background-color: white;
+    margin-top: 15px;
+    overflow: hidden;
+    float: left;
+  
+
+}
+.producto{
+   width: 380px;
+   margin: 10px 10px 20px 10px;
+   float: left;
+}
+
+.producto img{
+    width: 100%;
+}
+.producto h2{
+    margin: 10px 0;
+}
+.ver{
+    text-decoration: none;
+    background-color:#ef4c27;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+/* tutoriales */
+aside{
+    width: 320px;
+    float: right;
+}
+ aside h2{
+   background-color: white;
+    border: 1px solid #61B4EB;
+    padding: 7px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+ .tutorial{
+    background-color: white;
+    padding: 7px;
+    border: 1px solid #61B4EB ;
+}
+.publicidad{
+    background-color: white;
+    text-align: center;
+}
+    /*registro*/
+.contenedor-registro{
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #2D3940 ;
     
 }
-    
- @media(min-width:1415px){
-    .contenedor-banner .caja-rosa{
-        width: 40%;
-        height: 40vh;
-        position: relative;
-        left: 30px;
-         margin-left: 20px ;
-        padding:10px;
-        }
-    
-    .contenedor-banner .caja-rosa h1 {
-          font-size: 3em;
-          margin-top: 50px;
-          margin-bottom: 30px;
-          text-align: center;
-      }
-    .contenedor-banner .caja-rosa h4{
-        font-size:2em;
-        text-align: center;
-        color: rgb(66 85 86);
-    }
-       
-    .contenedor-banner .caja-verde{
-        width:70%;
-        height:70vh;
-    }
-    
-   .verde-caja img{
-        width: 100%;
-        height:70vh;
-    }
-    
-    nav ul{
-    display: flex;
-    justify-content: center;  
-    
-    }
-    
-    nav ul li a i{
-       font-size: 1.5em;
-       margin-top: 4px;
-    }
-    .principal{
-       display: flex;
-       flex-wrap: nowrap;
-       justify-content: center;
-       align-items: center;
-       max-width: 1415px;
-    }
-  
+.contenedor-registro h3{
+    padding: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+.contenedor-registro label{
+  margin: 10px 0px 3px 0px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 15px;
+}
+.datos-personales{
+    width: 340px;
+    height: 4vh;
+    font-size: 15px;
+    border: 1px solid rgb(221, 216, 216);
+    font-size: 15px;
+}
+.contenedor-registro p{
+    margin-top: 7px;
+    color: #ef4c27;
+    font-size: 15px;
+    font-weight: 500;
+}
+.contenedor-registro h4{
+    margin: 12px 0px 12px 0px;
+}
+.contenedor-registro button{
+    width: 150px;
+    height: 3vh;
+    color: white;
+   background-color:  #2283BC ;
+   border-radius: 5px;
+   border: none;
+   margin: 20px 0px 20px 0px;
+
+
  }
+  /******************Login**************/
+  .contenedor-login{
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #2D3940 ;
+}
+.contenedor-login h2{
+    margin: 30px ;
+    text-align: center;
+   
+}
+.contenedor-login label{
+    margin: 10px 0px 3px 0px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  #recuerda{
+    margin-left:  232px;
+    border-radius: 10px;
+  }
+.contenedor-login button{
+    width: 110px;
+    height: 4vh;
+    color: white;
+   background-color:  #2283BC ;
+   border-radius: 5px;
+   border: none;
+   margin-top: 30px ;
+}
+.ingreso{
+  
+    width: 340px;
+    height: 4vh;
+    font-size: 15px;
+    border: 1px solid rgb(221, 216, 216);
+    font-size: 15px;
+    
+}
